@@ -1,0 +1,40 @@
+@import './variables.scss';
+
+.wrapper {
+    padding: 7rem 0 10rem;
+    .container {    
+        @extend %container;
+        input[type=text], input[type=email], textarea {
+            width: 100%;
+            font-family: inherit;
+            font-size: inherit;
+            padding: 0.4rem;
+            margin-bottom: 1rem;
+            box-sizing: border-box;
+            border: solid 1px grey;
+            border-radius: 5px;
+        }
+        label {
+            font-size: 1.4rem;
+        }
+        button {
+            width: 100%;
+            border: none;
+            color: white;
+            padding: 0.5rem 2rem;
+            font-size: 1.6rem;
+            color: #fff;
+            background-color: $primary-color;
+            transition-duration: 0.4s;
+            border-radius: 5px;
+            &:hover {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+        }
+        *:focus {
+            outline: none;
+        }
+    }
+}
+
