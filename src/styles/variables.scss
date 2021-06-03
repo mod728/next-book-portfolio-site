@@ -1,0 +1,14 @@
+$primary-color: #ff5436;
+
+$break-s: 540px;
+$break-xs: 400px;
+
+%container {  
+    max-width: 800px; 
+    margin-right: auto; 
+    margin-left:  auto;
+    padding-right: 30px; 
+    padding-left:  30px;
+}
+
+

@@ -1,0 +1,56 @@
+@import './variables.scss';
+
+.wrapper {
+    padding: 7rem 0 10rem;
+    .container {    
+        @extend %container;
+        .blogCard {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+            color: inherit;
+            margin-top: 5rem;
+            box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+            @media(max-width: $break-s) { 
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .textContainer {
+            padding: 0 2rem 0.8rem;
+            @media(max-width: $break-s){ 
+                padding: 2rem 2rem;
+            }
+            a {
+                display: inline-block;
+                padding: 0.8rem 2rem;
+                background-color:  $primary-color;
+                color: #fff;
+                border-radius: 5px;
+                font-size: 1.4rem;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        .cardImg {
+            height: 300px;
+            img{
+                min-height: 300px;
+            }
+            @media(max-width: $break-s) { 
+                order: -1;
+            }
+        }
+    }
+}
+
+// Paginatiom
+.paginationWrapper {
+    text-align: center;
+    margin: 5rem auto;
+    a {
+        color: $primary-color;
+        padding: 0 1rem;
+    }
+}

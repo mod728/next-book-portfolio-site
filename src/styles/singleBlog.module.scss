@@ -1,0 +1,37 @@
+@import './variables.scss';
+
+.hero {
+    text-align: center;
+}
+
+.wrapper {
+    padding: 5rem 0 10rem;
+    .container {    
+        @extend %container;
+    }
+    @media(max-width: $break-s) { 
+        padding: 2rem 0 10rem;
+    }
+}
+
+
+// PrevNext
+.pnWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    @extend %container;
+    @media (max-width: $break-s){ flex-wrap: wrap; }
+    .linkCard {
+        display: flex;
+        justify-content: center;
+        border: 2px solid $primary-color;
+        width: 100%;
+        padding: 2rem 5rem;
+        color: inherit;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
